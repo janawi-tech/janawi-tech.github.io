@@ -926,20 +926,6 @@ a.info-value:hover {
 }
 
 /* Responsive Breakpoints */
-@screen-lg (max-width: 1024px) {
-    .app-container {
-        grid-template-columns: 1fr;
-        padding: 1.5rem 1rem;
-        gap: 1.5rem;
-    }
-
-    .sidebar-card {
-        position: relative;
-        top: 0;
-        padding: 2rem 1.5rem;
-    }
-}
-
 @media (max-width: 1024px) {
     .app-container {
         grid-template-columns: 1fr;
@@ -952,10 +938,20 @@ a.info-value:hover {
         top: 0;
         padding: 2rem 1.5rem;
         width: 100%;
+        max-width: 100%;
     }
 }
 
 @media (max-width: 768px) {
+    .tab-pane {
+        padding: 1.5rem 1.25rem;
+    }
+
+    .services-grid, .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1.25rem;
+    }
+
     .resume-timeline-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -970,9 +966,51 @@ a.info-value:hover {
         gap: 1.5rem;
     }
 
+    .map-wrapper {
+        height: 250px;
+    }
+
+    .nav-tab-btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.85rem;
+    }
+
+    .terminal-body {
+        height: 280px;
+        padding: 1rem;
+        font-size: 0.8rem;
+    }
+
+    .terminal-prompt-line {
+        padding: 0.5rem 1rem 1rem;
+    }
+
+    .terminal-prompt {
+        font-size: 0.8rem;
+    }
+
+    .terminal-input {
+        font-size: 0.8rem;
+    }
+
     .app-footer {
         flex-direction: column;
         text-align: center;
         gap: 0.25rem;
     }
 }
+
+@media (max-width: 480px) {
+    .profile-name {
+        font-size: 1.35rem;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .services-grid, .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
