@@ -69,11 +69,11 @@ Web Development:
             const height = window.innerHeight;
             return `<div style="display: flex; gap: 2rem; flex-wrap: wrap; margin: 0.5rem 0;">
   <pre class="text-accent" style="font-family: var(--font-mono); margin: 0; line-height: 1.2;">
-      _                        _ 
-     | | __ _ _ __   __ ___  _(_)
-  _  | |/ _\` | '_ \\ / _\` \\ \\/ / |
- | |_| | (_| | | | | (_| |>  <| |
-  \\___/ \\__,_|_| |_|\\__,_/_/\\_\\_|
+      _                         _ 
+     | | __ _ _ __   __ ___   _(_)
+  _  | |/ _\` | '_ \\ / _\` \\ \\  / / |
+ | |_| | (_| | | | | (_| | \\ \\/ / | |
+  \\___/ \\__,_|_| |_|\\__,_/  \\/\\_/  |_|
   </pre>
   <div style="font-family: var(--font-mono); line-height: 1.6;">
     <span class="text-success">guest@janawi-tech</span>
