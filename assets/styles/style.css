@@ -831,6 +831,33 @@ a.info-value:hover {
     line-height: 1.5;
 }
 
+/* Project card tech tags */
+.project-tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 1rem;
+    border-top: 1px solid var(--border-color);
+    padding-top: 0.75rem;
+}
+
+.project-tech-tag {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    background-color: var(--bg-input);
+    padding: 0.25rem 0.5rem;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.project-card:hover .project-tech-tag {
+    border-color: var(--accent-glow);
+    color: var(--text-accent);
+}
+
+
 /* Contact Tab layout styling */
 .contact-grid {
     display: grid;

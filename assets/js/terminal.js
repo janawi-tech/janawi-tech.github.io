@@ -18,13 +18,14 @@ document.addEventListener("DOMContentLoaded", () => {
     // CLI Commands
     const commands = {
         help: () => `Available commands:
-  <span class="text-accent">about</span>     - Brief info about Muhammad Janawi
-  <span class="text-accent">skills</span>    - IT & Networking skills matrix
-  <span class="text-accent">projects</span>  - Recent managed projects & works
-  <span class="text-accent">contact</span>   - Contact channels & social links
-  <span class="text-accent">ping</span>      - Simulates pinging the server
-  <span class="text-accent">clear</span>     - Clear the terminal screen
-  <span class="text-accent">help</span>      - Show this help menu`,
+  <span class="text-accent">about</span>        - Brief info about Muhammad Janawi
+  <span class="text-accent">skills</span>       - IT & Networking skills matrix
+  <span class="text-accent">projects</span>     - Recent managed projects & works
+  <span class="text-accent">contact</span>      - Contact channels & social links
+  <span class="text-accent">ping [ip]</span>    - Simulates pinging a custom server or domain
+  <span class="text-accent">neofetch</span>     - Show system information and profile logo
+  <span class="text-accent">clear</span>        - Clear the terminal screen
+  <span class="text-accent">help</span>         - Show this help menu`,
         
         about: () => `Muhammad Janawi - IT Engineer & Web Developer.
 Over 4 years of experience managing IT infrastructures, networking, server administration, and developing modern web applications.
@@ -52,14 +53,42 @@ Web Development:
         
         ping: (args) => {
             const host = args[0] || "janawi.tech";
-            let output = `PING ${host} (103.146.244.12) 56(84) bytes of data.\n`;
+            const cleanHost = escapeHTML(host.substring(0, 50));
+            let output = `PING ${cleanHost} (103.146.244.12) 56(84) bytes of data.\n`;
             for (let i = 1; i <= 3; i++) {
                 const time = (Math.random() * 2 + 10).toFixed(3);
-                output += `64 bytes from ${host}: icmp_seq=${i} ttl=64 time=${time} ms\n`;
+                output += `64 bytes from ${cleanHost}: icmp_seq=${i} ttl=64 time=${time} ms\n`;
             }
-            output += `--- ${host} ping statistics ---\n`;
+            output += `--- ${cleanHost} ping statistics ---\n`;
             output += `3 packets transmitted, 3 received, 0% packet loss, time 2003ms`;
             return output;
+        },
+
+        neofetch: () => {
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+            return `<div style="display: flex; gap: 2rem; flex-wrap: wrap; margin: 0.5rem 0;">
+  <pre class="text-accent" style="font-family: var(--font-mono); margin: 0; line-height: 1.2;">
+      _                        _ 
+     | | __ _ _ __   __ ___  _(_)
+  _  | |/ _\` | '_ \\ / _\` \\ \\/ / |
+ | |_| | (_| | | | | (_| |>  <| |
+  \\___/ \\__,_|_| |_|\\__,_/_/\\_\\_|
+  </pre>
+  <div style="font-family: var(--font-mono); line-height: 1.6;">
+    <span class="text-success">guest@janawi-tech</span>
+    ------------------
+    OS: <span class="text-accent">Janawi-OS v1.0.0</span>
+    Host: <span class="text-accent">Portofolio-Sandbox (Web-CLI)</span>
+    Uptime: <span class="text-accent">Active Session</span>
+    Shell: <span class="text-accent">Interactive JavaScript Shell</span>
+    Resolution: <span class="text-accent">${width}x${height}</span>
+    CPU: <span class="text-accent">Virtual Core (Browser Sandbox)</span>
+    Memory: <span class="text-accent">Available RAM</span>
+    
+    <span style="display: inline-block; width: 15px; height: 15px; background: #ef4444; margin-right: 2px;"></span><span style="display: inline-block; width: 15px; height: 15px; background: #22c55e; margin-right: 2px;"></span><span style="display: inline-block; width: 15px; height: 15px; background: #eab308; margin-right: 2px;"></span><span style="display: inline-block; width: 15px; height: 15px; background: #38bdf8; margin-right: 2px;"></span><span style="display: inline-block; width: 15px; height: 15px; background: #a855f7; margin-right: 2px;"></span>
+  </div>
+</div>`;
         },
         
         clear: () => {
@@ -73,6 +102,7 @@ Web Development:
 System status: <span class="text-success">ONLINE</span>
 Connection: <span class="text-success">SECURE</span>`;
     printOutput("", welcomeText);
+    printOutput("", commands.neofetch());
 
     // Event listener for commands
     terminalInput.addEventListener("keydown", (e) => {
