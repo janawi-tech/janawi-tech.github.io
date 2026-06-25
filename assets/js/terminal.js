@@ -26,8 +26,8 @@ document.addEventListener("DOMContentLoaded", () => {
   <span class="text-accent">clear</span>     - Clear the terminal screen
   <span class="text-accent">help</span>      - Show this help menu`,
         
-        about: () => `Muhammad Janawi - IT Network Engineer & IT System Analyst.
-Over 4 years of experience managing IT infrastructures, networking devices, servers, and security.
+        about: () => `Muhammad Janawi - IT Engineer & Web Developer.
+Over 4 years of experience managing IT infrastructures, networking, server administration, and developing modern web applications.
 Currently contributing to LPAFK Banjarbaru & RSU Permata Husada.`,
         
         skills: () => `Network Engineering:
@@ -35,7 +35,9 @@ Currently contributing to LPAFK Banjarbaru & RSU Permata Husada.`,
   - Load Balancing, QoS, Firewall, Network Security
 Infrastructure & Systems:
   - Windows/Linux Server Admin, Database (MySQL/PostgreSQL)
-  - CCTV Deployments, Hardware & Software Troubleshooting`,
+  - CCTV Deployments, Hardware & Software Troubleshooting
+Web Development:
+  - Laravel, React.js, Tailwind CSS, PHP, JavaScript, Git & RESTful API`,
         
         projects: () => `Key Managed Projects:
   1. <span class="text-accent">PT. ERA BITS INDONESIA</span> (erabits-indonesia.com) - IT Solutions Provider
