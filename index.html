@@ -1,798 +1,396 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
-	<!-- Meta Data -->
-	<meta charset="UTF-8">
-	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="author" content="jan.net" />
-	<meta name="description" content="Muhammad Janawi - Network Engineer"> 
-	
-	<!-- Twitter Cards -->
-	<meta name="twitter:card" content="Muhammad Janawi - Network Engineer">
-	<meta name="twitter:image" content="assets/img/logo/logo.png">
-	<meta name="twitter:title" content="Muhammad Janawi">
-	<meta name="twitter:site" content="@muhammad_janawi">
-	<meta name="twitter:creator" content="@muhammad_janawi"> 
-	
-	<!-- Open Graph data -->
-	<meta property="og:locale" content="en_US">
-	<meta property="og:type" content="Portfolio">
-	<meta property="og:title" content="Muhammad Janawi - Network Engineer">
-	<meta property="og:url" content="https://janawi-tech.github.io">
-	<meta property="og:site_name" content="Muhammad Janawi">
-	<meta property="og:image" content="assets/img/logo/logo.png">
-	
-	<!-- Google Meta -->
-	<!-- <meta name="google-site-verification" content="LXeirZYSBk47aNu0DDM0CSdKAXplRUl3loltDy9CjR4" /> -->
-	
-	<!-- Title -->
-	<title>Muhammad Janawi - Network Engineer</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Muhammad Janawi">
+    <meta name="description" content="Muhammad Janawi - IT Network Engineer & IT System Analyst Portofolio Profesional">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://janawi-tech.github.io/">
+    <meta property="og:title" content="Muhammad Janawi - IT Network Engineer & IT System Analyst">
+    <meta property="og:description" content="Portofolio profesional Muhammad Janawi dengan fokus pada infrastruktur IT, jaringan, server, dan analisis sistem.">
+    <meta property="og:image" content="assets/img/logo/logo.png">
 
-	<!-- Favicons -->
-	<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
-	<link rel="manifest" href="assets/img/favicons/site.webmanifest">
-	<link rel="mask-icon" href="assets/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Muhammad Janawi">
+    <meta property="twitter:description" content="IT Network Engineer & System Analyst Portfolio">
+    <meta property="twitter:image" content="assets/img/logo/logo.png">
 
-	<!-- Styles -->
-	<link rel="stylesheet" type="text/css" href="assets/styles/style.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css">
+    <title>Muhammad Janawi - IT Network Engineer & IT System Analyst</title>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+
+    <!-- Google Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Core Styles -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" id="dark-mode-style" href="assets/styles/style-dark.css">
 </head>
 
 <body>
-	<!-- Preloader -->
-	<div class="preloader">
-		<div class="preloader__wrap">
-			<div class="circle-pulse">
-				<div class="circle-pulse__1"></div>
-				<div class="circle-pulse__2"></div>
-			</div>
-			<div class="preloader__progress"><span></span></div>
-		</div>
-	</div>
+    <!-- Ambient Background Blobs -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
 
-	<main class="main">
-		<!-- Dark/Light Toggle -->
-		<div class="dark-light m-3">
-			<div class="btn-group" role="group">
-				<button data-toggle="tooltip" title="Switch to Light Mode" type="button" class="btn toggle-btn light"><i class="fas fa-sun"></i></button>
-				<button data-toggle="tooltip" title="Switch to Dark Mode" type="button" class="btn toggle-btn dark"><i class="fas fa-moon"></i></button>
-			  </div>
-		</div>
+    <div class="app-container">
+        <!-- Sidebar / Profile Card -->
+        <aside class="sidebar-card">
+            <div class="profile-header">
+                <div class="avatar-wrapper">
+                    <img src="assets/img/logo/logo.png" alt="Muhammad Janawi" class="profile-avatar">
+                    <div class="online-indicator"></div>
+                </div>
+                <h1 class="profile-name">Muhammad Janawi</h1>
+                <div class="profile-badge">Network Engineer & Analyst</div>
+            </div>
 
-		<!-- Header Image -->
-		<div class="header-image">
-			<div class="js-parallax" style="background-image: url(assets/img/header_bg_1x.png);"></div>
-		</div>
+            <div class="profile-info-list">
+                <div class="info-item">
+                    <i class="fa-solid fa-envelope info-icon"></i>
+                    <div>
+                        <div class="info-label">Email</div>
+                        <a href="mailto:muhammad.janawi99@gmail.com" class="info-value">muhammad.janawi99@gmail.com</a>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-phone info-icon"></i>
+                    <div>
+                        <div class="info-label">WhatsApp</div>
+                        <a href="https://wa.me/6282261973993" target="_blank" class="info-value">0822-6197-3993</a>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-location-dot info-icon"></i>
+                    <div>
+                        <div class="info-label">Lokasi</div>
+                        <span class="info-value">Banjarbaru, Kalsel</span>
+                    </div>
+                </div>
+            </div>
 
-		<div class="container gutter-top">
-			<!-- Header -->
-			<header class="header box">
-				<div class="header__left">
-					<div class="header__photo">
-						<img class="header__photo-img" src="assets/img/logo/logo.png" alt="Muhammad Janawi">
-					</div>
-					<div class="header__base-info">
-						<h4 class="title titl--h4">Muhammad Janawi</h4>
-						<div class="status">IT Network Engineer | IT System Analyst</div>
-						<ul class="header__social">
-							<li><a target="_blank" href="https://www.facebook.com/janawiscience"><i class="fab fa-facebook"></i></a></li>
-							<!--<li><a target="_blank" href="https://twitter.com/muhammad_janawi"><i class="fab fa-twitter"></i></a></li>-->
-							<li><a target="_blank" href="https://www.linkedin.com/in/janawi-erabits/"><i class="fab fa-linkedin"></i></a></li>
-							<!--<li><a target="_blank" href="https://github.com/muhammad_janawi"><i class="fab fa-github"></i></a></li>-->
-							<!--<li><a target="_blank" href="https://medium.com/@muhammad_janawi"><i class="fab fa-medium"></i></a></li>-->
-							<li><a target="_blank" href="https://www.instagram.com/janawi.erabits"><i class="fab fa-instagram"></i></a></li>
-							<!--<li><a target="_blank" href="https://hackerrank.com/muhammad_janawi"><i class="fab fa-hackerrank"></i></a></li>-->
-						</ul>
-					</div>
-				</div>
-				<div class="header__right">
-					<ul class="header__contact">
-						<li><span class="overhead">Email</span>muhammad.janawi99@gmail.com</li>
-						<li><span class="overhead">Location</span>Banjarbaru, Kalimantan Selatan</li>
-					</ul>
-				</div>
-			</header>
-			
-			<div class="row sticky-parent">
-				<!-- Sidebar nav -->
-				<aside class="col-12 col-md-12 col-lg-2">
-					<div class="sidebar box sticky-column">
-						<ul class="nav js-tabs">
-							<li class="nav__item"><a class="active" href="#about-tab"><i class="icon-user"></i>About</a>
-							</li>
-							<li class="nav__item"><a href="#resume-tab"><i class="icon-file-text"></i>Resume</a></li>
-							<!-- <li class="nav__item"><a href="#works-tab"><i class="icon-codesandbox"></i>Works</a></li> -->
-							<li class="nav__item"><a href="#blog-tab"><i class="icon-book-open"></i>Blog</a></li>
-							<li class="nav__item"><a href="#contact-tab"><i class="icon-book"></i>Contact</a></li>
-						</ul>
-					</div>
-					
-				</aside>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/janawi-erabits/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/janawi.erabits" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/janawiscience" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://wa.me/6282261973993" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
 
-				<!-- Content -->
-				<div class="col-12 col-md-12 col-lg-10">
-					<div class="box box-content mb-5" id="content">
+            <!-- Dark/Light Theme Switcher -->
+            <div class="theme-switch-container">
+                <span class="theme-label"><i class="fa-solid fa-circle-half-stroke"></i> Mode Tampilan</span>
+                <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-sun icon-sun"></i>
+                    <i class="fa-solid fa-moon icon-moon"></i>
+                </button>
+            </div>
+        </aside>
 
-						<div class="content">
-							<!-- ABOUT -->
-							<div id="about-tab" class="tabcontent active">
-								<div class="pb-0 pb-sm-2" style="text-align: justify;">
-									<h1 class="title title--h1 first-title title__separate">About Me</h1>
-									<p>Saya memiliki lebih dari empat tahun pengalaman di industri Teknologi Informasi, dengan fokus pada pengelolaan infrastruktur IT seperti jaringan, server, dan keamanan.</p>
-								
-									<p>Selain itu, saya juga memiliki pengalaman dalam manajemen proyek, desain grafis kreatif, instalasi CCTV, dan analisis data. Saya telah berkontribusi di berbagai jenis organisasi, termasuk perusahaan besar, start-up, dan lembaga pemerintahan.</p>
-								
-									<p>Dalam peran saya, saya tidak hanya bertanggung jawab untuk aspek teknis, tetapi juga memiliki keahlian dalam manajemen pemasaran dan humas organisasi. Ini mencakup kemampuan saya dalam merancang strategi pemasaran, berkomunikasi efektif, dan membangun hubungan yang positif dengan berbagai pihak terkait.</p>
-								
-									<p>Keahlian saya melibatkan pengelolaan infrastruktur IT end-to-end, kemampuan manajemen proyek, desain grafis kreatif, instalasi CCTV, dan analisis data untuk mendukung pengambilan keputusan. Saya yakin bahwa kombinasi keterampilan ini dapat memberikan kontribusi positif bagi setiap proyek atau organisasi di mana saya terlibat.</p>
-								</div>
-								
-								
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Navigation Header -->
+            <nav class="navbar-tabs">
+                <button class="nav-tab-btn active" data-tab="about"><i class="fa-solid fa-user"></i> About</button>
+                <button class="nav-tab-btn" data-tab="resume"><i class="fa-solid fa-file-invoice"></i> Resume</button>
+                <button class="nav-tab-btn" data-tab="terminal"><i class="fa-solid fa-terminal"></i> Terminal</button>
+                <button class="nav-tab-btn" data-tab="projects"><i class="fa-solid fa-briefcase"></i> Proyek</button>
+                <button class="nav-tab-btn" data-tab="contact"><i class="fa-solid fa-envelope-open-text"></i> Kontak</button>
+            </nav>
 
-								<!-- What -->
-								<div class="mt-1">
-									<h2 class="title title--h3">What I'm Doing</h2>
-									<div class="row">
-										<!-- Case Item -->
-										<div class="col-12 col-lg-6">
-											<div class="case-item">
-												<img class="case-item__icon"
-													src="assets/icons/network.png"
-													alt="" />
-												<div>
-													<h3 class="title title--h4">Network Engineer</h3>
-													<p class="case-item__caption">
-														Sebagai Network Engineer, saya memiliki pengalaman dalam merancang, mengelola, dan memelihara infrastruktur jaringan dengan fokus pada efisiensi operasional dan keamanan. Keahlian saya meliputi konfigurasi perangkat keras, implementasi protokol, dan pemecahan masalah. Saya selalu berupaya mengikuti perkembangan teknologi terkini untuk mendukung konektivitas dan komunikasi yang handal.</p>
-												</div>
-											</div>
-										</div>
+            <!-- Tab Contents -->
+            <div class="tab-viewport">
+                <!-- ABOUT TAB -->
+                <section id="about" class="tab-pane active">
+                    <h2 class="section-title">Tentang Saya</h2>
+                    <p class="about-lead">
+                        Saya adalah profesional IT dengan pengalaman lebih dari 4 tahun mengelola infrastruktur jaringan, administrasi server, keamanan sistem, dan analisis data.
+                    </p>
+                    <p class="about-desc">
+                        Saya terbiasa merancang strategi infrastruktur IT end-to-end, menyelesaikan troubleshooting jaringan kompleks, serta berkontribusi aktif pada start-up, perusahaan besar, dan instansi pelayanan publik untuk meningkatkan efisiensi operasional sistem.
+                    </p>
 
-										<!-- Case Item -->
-										<div class="col-12 col-lg-6">
-											<div class="case-item">
-												<img class="case-item__icon"
-													src="assets/icons/analis.png"
-													alt="" />
-												<div>
-													<h3 class="title title--h4">System Analyst</h3>
-													<p class="case-item__caption">Sebagai IT System Analyst, saya memiliki keahlian dalam menganalisis dan merancang solusi sistem yang mendukung kebutuhan bisnis. Pengalaman saya mencakup evaluasi kebutuhan pengguna, perancangan arsitektur sistem, dan implementasi solusi IT yang efektif. Saya fokus pada peningkatan efisiensi operasional dan integrasi teknologi untuk mendukung tujuan strategis perusahaan. Dengan pemahaman yang kuat tentang kebutuhan bisnis dan teknologi, saya berupaya mengoptimalkan kinerja sistem untuk mencapai hasil yang optimal.</p>
-												</div>
-											</div>
-										</div>
-										<!-- Case Item -->
-										<div class="col-12 col-lg-6">
-											<div class="case-item">
-												<img class="case-item__icon"
-													src="assets/icons/desain.png"
-													alt="" />
-												<div>
-													<h3 class="title title--h4">Design Grafis</h3>
-													<p class="case-item__caption">Sebagai Desainer Grafis, saya memiliki keahlian dalam menciptakan solusi visual yang kreatif dan efektif. Pengalaman saya mencakup desain identitas merek, materi pemasaran, dan elemen-elemen visual untuk berbagai platform. Dengan pemahaman yang mendalam tentang estetika dan tren desain, saya fokus pada mengkomunikasikan pesan merek dan ide dengan daya tarik visual yang kuat. Saya senang berinovasi dan terus mengembangkan keterampilan desain saya untuk menciptakan hasil yang memukau dan memenuhi kebutuhan klien.</p>
-												</div>
-											</div>
-										</div>
+                    <h3 class="subsection-title">Layanan & Keahlian Utama</h3>
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-icon-wrapper">
+                                <i class="fa-solid fa-network-wired"></i>
+                            </div>
+                            <h4 class="service-title">IT Network Engineer</h4>
+                            <p class="service-desc">Merancang dan mengonfigurasi perangkat keras jaringan (Mikrotik, Cisco), mengelola routing dinamis (OSPF), load balancing, VPN, VLAN, QoS, serta memastikan keamanan jaringan end-to-end.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon-wrapper">
+                                <i class="fa-solid fa-server"></i>
+                            </div>
+                            <h4 class="service-title">Server & System Admin</h4>
+                            <p class="service-desc">Instalasi, konfigurasi, dan pemeliharaan server Linux & Windows, manajemen database (MySQL/PostgreSQL), backup berkala, pemantauan performa server, dan virtualisasi.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon-wrapper">
+                                <i class="fa-solid fa-chart-line"></i>
+                            </div>
+                            <h4 class="service-title">IT System Analyst</h4>
+                            <p class="service-desc">Menganalisis proses bisnis organisasi, mengidentifikasi celah inefisiensi, merancang kebutuhan arsitektur sistem baru, serta mengintegrasikan solusi teknologi terkini.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon-wrapper">
+                                <i class="fa-solid fa-toolbox"></i>
+                            </div>
+                            <h4 class="service-title">IT Support & CCTV Specialist</h4>
+                            <p class="service-desc">Dukungan teknis hardware/software, instalasi dan monitoring CCTV modern berbasis IP, maintenance komputer client, serta pemecahan masalah teknis harian.</p>
+                        </div>
+                    </div>
+                </section>
 
-										<div class="col-12 col-lg-6">
-											<div class="case-item">
-												<img class="case-item__icon"
-													src="assets/icons/support.png"
-													alt="" />
-												<div>
-													<h3 class="title title--h4">IT Technician</h3>
-													<p class="case-item__caption">Sebagai Teknisi IT, saya memiliki keterampilan dalam merespons, mendiagnosa, dan memperbaiki masalah perangkat keras dan perangkat lunak. Pengalaman saya mencakup instalasi, pemeliharaan, dan dukungan teknis untuk memastikan sistem IT beroperasi dengan lancar. Saya terampil dalam memberikan solusi teknis dengan cepat dan efisien, serta memiliki kemampuan untuk berkomunikasi secara jelas dengan pengguna. Dedikasi saya terhadap pemecahan masalah dan pemeliharaan sistem membuat saya menjadi anggota yang berharga dalam tim IT.</p>
-												</div>
-											</div>
-										</div>
+                <!-- RESUME TAB -->
+                <section id="resume" class="tab-pane">
+                    <div class="resume-header">
+                        <h2 class="section-title">Resume & Kompetensi</h2>
+                        <a href="https://drive.google.com/file/d/1yCLsjVGOvOs9WJucE_cReKZQLYOU80O7/view?usp=drive_link" target="_blank" class="download-cv-btn">
+                            <i class="fa-solid fa-download"></i> Unduh CV Lengkap
+                        </a>
+                    </div>
 
-										<div class="col-12 col-lg-6">
-											<div class="case-item">
-												<img class="case-item__icon"
-													src="assets/icons/database.png"
-													alt="" />
-												<div>
-													<h3 class="title title--h4">Database Administrator</h3>
-													<p class="case-item__caption">Sebagai Database Administrator, saya memiliki tanggung jawab mengelola, merancang, dan memelihara sistem database untuk memastikan keamanan, ketersediaan, dan kinerja optimal. Keahlian saya meliputi perencanaan kapasitas, penyetelan kinerja, dan pemulihan bencana. Saya berfokus pada memastikan integritas dan ketersediaan data untuk mendukung operasional perusahaan.</div>
-											</div>
-										</div>
+                    <div class="resume-timeline-grid">
+                        <!-- Pengalaman Kerja -->
+                        <div class="timeline-column">
+                            <h3 class="timeline-group-title"><i class="fa-solid fa-briefcase"></i> Pengalaman Kerja</h3>
+                            <div class="timeline-container">
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <span class="timeline-date">Januari 2021 — Sekarang</span>
+                                    <h4 class="timeline-title">IT Network Engineer & IT System Analyst</h4>
+                                    <div class="timeline-company">LPAFK Banjarbaru - Kalimantan Selatan</div>
+                                    <p class="timeline-desc">Mengelola infrastruktur jaringan internal instansi, melakukan maintenance server, mengamankan lalu lintas data, serta menyusun kebutuhan modul sistem penunjang layanan teknis.</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <span class="timeline-date">Januari 2020 — Sekarang</span>
+                                    <h4 class="timeline-title">Koordinator IT</h4>
+                                    <div class="timeline-company">RSU Permata Husada - Kalimantan Selatan</div>
+                                    <p class="timeline-desc">Mengoordinasikan operasional sistem informasi rumah sakit (SIMRS), memastikan konektivitas jaringan antar ruangan stabil, mengawasi integrasi CCTV, dan membimbing tim IT support.</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <span class="timeline-date">2019 — 2020</span>
+                                    <h4 class="timeline-title">IT Branch Support</h4>
+                                    <div class="timeline-company">PT. Sumber Alfaria Trijaya Tbk. - Kalsel</div>
+                                    <p class="timeline-desc">Menangani pemeliharaan perangkat kasir, server toko, perbaikan jaringan lokal toko retail, serta penanganan kendala sistem IT cabang dengan cepat.</p>
+                                </div>
+                            </div>
+                        </div>
 
-										<div class="col-12 col-lg-6">
-											<div class="case-item">
-												<img class="case-item__icon"
-													src="assets/icons/server.png"
-													alt="" />
-												<div>
-													<h3 class="title title--h4">Server Administrator</h3>
-													<p class="case-item__caption">Sebagai Server Administrator, tugas utama saya adalah mengelola dan merawat infrastruktur server, memastikan ketersediaan dan performa optimal. Saya memiliki keahlian dalam konfigurasi perangkat keras, pemantauan sistem, dan pemecahan masalah guna menjamin keamanan dan keandalan server. Dedikasi saya terletak pada penyelenggaraan lingkungan IT yang efisien dan tanpa kendala.</div>
-											</div>
-										</div>
-										
+                        <!-- Pendidikan -->
+                        <div class="timeline-column">
+                            <h3 class="timeline-group-title"><i class="fa-solid fa-graduation-cap"></i> Riwayat Pendidikan</h3>
+                            <div class="timeline-container">
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <span class="timeline-date">2014 — 2019</span>
+                                    <h4 class="timeline-title">Sarjana Ilmu Komputer (S.Kom)</h4>
+                                    <div class="timeline-company">FMIPA - Universitas Lambung Mangkurat</div>
+                                    <p class="timeline-desc">Fokus pada rekayasa perangkat lunak, sistem komputasi, administrasi jaringan komputer, dan analisis data.</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <span class="timeline-date">2012 — 2014</span>
+                                    <h4 class="timeline-title">Sekolah Menengah Atas (IPA)</h4>
+                                    <div class="timeline-company">SMAN-2 Katingan Kuala</div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <span class="timeline-date">2010 — 2012</span>
+                                    <h4 class="timeline-title">Sekolah Menengah Pertama</h4>
+                                    <div class="timeline-company">SMPN-3 Kampung Baru</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-										<!-- Case Item -->
-										<!-- <div class="col-12">
-											<div class="case-item">
-												<img class="case-item__icon"
-													src="assets/icons/mobile.png"
-													alt="" />
-												<div>
-													<h3 class="title title--h4">Mobile Apps</h3>
-													<p class="case-item__caption">Design and developing Android and iOS application using React Native by writing well documented, secure and scalable code.</p>
-												</div>
-											</div>
-										</div> -->
-									</div>
-								</div>
+                    <!-- Skills Section -->
+                    <h3 class="subsection-title">Keahlian & Sertifikasi Teknis</h3>
+                    <div class="skills-wrapper">
+                        <div class="skills-category">
+                            <h4 class="skills-cat-title"><i class="fa-solid fa-network-wired"></i> Networking & Security</h4>
+                            <div class="skills-tags">
+                                <span class="skill-tag">Mikrotik RouterOS</span>
+                                <span class="skill-tag">Cisco IOS</span>
+                                <span class="skill-tag">Routing (OSPF, Static)</span>
+                                <span class="skill-tag">VLAN & Switching</span>
+                                <span class="skill-tag">VPN (PPTP, L2TP, OpenVPN)</span>
+                                <span class="skill-tag">Load Balancing (ECMP, PCC)</span>
+                                <span class="skill-tag">Bandwidth Management (QoS)</span>
+                                <span class="skill-tag">Network Security & Firewalls</span>
+                                <span class="skill-tag">SD-WAN</span>
+                                <span class="skill-tag">TCP/IP Suite</span>
+                            </div>
+                        </div>
+                        <div class="skills-category">
+                            <h4 class="skills-cat-title"><i class="fa-solid fa-server"></i> Systems & Admin</h4>
+                            <div class="skills-tags">
+                                <span class="skill-tag">Linux Server (Ubuntu/Debian)</span>
+                                <span class="skill-tag">Windows Server</span>
+                                <span class="skill-tag">Active Directory</span>
+                                <span class="skill-tag">MySQL / MariaDB</span>
+                                <span class="skill-tag">PostgreSQL</span>
+                                <span class="skill-tag">Virtualization (Proxmox, VMware)</span>
+                                <span class="skill-tag">CCTV IP Network</span>
+                                <span class="skill-tag">Network Monitoring (PRTG/Zabbix)</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-								<!-- Testimonials -->
-								<!-- <div class="mt-2">
-									<h2 class="title title--h3">Testimonials</h2>
-									<div class="swiper-container js-carousel-review">
-										<div class="swiper-wrapper">
-											<div class="swiper-slide review-item">
-												<svg class="avatar avatar--80" viewBox="0 0 84 84">
-													<g class="avatar__hexagon">
-														<image xlink:href="assets/img/avatar_male.png" height="100%"
-															width="100%" />
-													</g>
-												</svg>
-												<div class="review-item__textbox">
-													<h4 class="title title--h5">Utsav Bhandari</h4>
-													<p class="review-item__caption">
-														He is the best developer that I have work with also he has a great mindset with his leadership skill. 
-													</p>
-												</div>
-											</div>
+                <!-- TERMINAL TAB -->
+                <section id="terminal" class="tab-pane">
+                    <h2 class="section-title">Console Simulator</h2>
+                    <p class="tab-lead-text">Gunakan simulator baris perintah di bawah ini untuk melihat profil teknis saya secara interaktif.</p>
+                    <div class="terminal-container">
+                        <div class="terminal-header">
+                            <div class="terminal-buttons">
+                                <span class="t-btn close-btn"></span>
+                                <span class="t-btn minimize-btn"></span>
+                                <span class="t-btn maximize-btn"></span>
+                            </div>
+                            <div class="terminal-title">guest@janawi-tech: ~</div>
+                        </div>
+                        <div class="terminal-body" id="terminal-body">
+                            <!-- JS will inject output lines here -->
+                        </div>
+                        <div class="terminal-prompt-line">
+                            <span class="terminal-prompt">guest@janawi-tech:~$</span>
+                            <input type="text" class="terminal-input" id="terminal-input" autofocus autocomplete="off" spellcheck="false">
+                        </div>
+                    </div>
+                </section>
 
-											<div class="swiper-slide review-item">
-												<svg class="avatar avatar--80" viewBox="0 0 84 84">
-													<g class="avatar__hexagon">
-														<image xlink:href="assets/img/avatar_male.png" height="100%"
-															width="100%" />
-													</g>
-												</svg>
-												<div class="review-item__textbox">
-													<h4 class="title title--h5">Hsaasn Shuraf</h4>
-													<p class="review-item__caption">
-														Nayeem did a great job of following our direction on site development and managing our junior developer. We got just what we asked for and more. 	
-													</p>
-												</div>
-											</div>
+                <!-- PROJECTS TAB -->
+                <section id="projects" class="tab-pane">
+                    <h2 class="section-title">Portofolio Proyek</h2>
+                    <p class="tab-lead-text">Beberapa platform dan situs web yang saya kelola, optimalkan, atau kembangkan bersama tim.</p>
 
-											<div class="swiper-slide review-item">
-												<svg class="avatar avatar--80" viewBox="0 0 84 84">
-													<g class="avatar__hexagon">
-														<image xlink:href="assets/img/avatar_male.png" height="100%"
-															width="100%" />
-													</g>
-												</svg>
-												<div class="review-item__textbox">
-													<h4 class="title title--h5">Muhammad Sohail</h4>
-													<p class="review-item__caption">
-														Nayeem is a pro deveoloper and friendly person. He completed our 5 projects before the deadline and saved our life.
-													</p>
-												</div>
-											</div>
-										</div>
-										<div class="swiper-pagination"></div>
-									</div>
-								</div> -->
+                    <div class="projects-grid">
+                        <!-- Project 1 -->
+                        <div class="project-card">
+                            <div class="project-img-wrapper">
+                                <img src="assets/img/blog_1.png" alt="PT. ERA BITS INDONESIA" class="project-img">
+                                <div class="project-overlay">
+                                    <a href="https://erabits-indonesia.com/" target="_blank" class="project-link-btn" title="Kunjungi Website"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-tag">IT Solutions</div>
+                                <h3 class="project-title">PT. ERA BITS INDONESIA</h3>
+                                <p class="project-desc">Website profil perusahaan penyedia solusi teknologi terintegrasi di Banjarbaru yang mencakup instalasi jaringan, pembuatan aplikasi, dan pengadaan CCTV.</p>
+                            </div>
+                        </div>
 
-								<!-- Clients -->
-								<!-- <div class="mt-4">
-									<h2 class="title title--h3">Clients</h2>
+                        <!-- Project 2 -->
+                        <div class="project-card">
+                            <div class="project-img-wrapper">
+                                <img src="assets/img/blog_2.png" alt="BPFK Banjarbaru" class="project-img">
+                                <div class="project-overlay">
+                                    <a href="https://bpfk-banjarbaru.org/" target="_blank" class="project-link-btn" title="Kunjungi Website"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-tag">Public Service</div>
+                                <h3 class="project-title">BPFK Banjarbaru Portal</h3>
+                                <p class="project-desc">Website profil instansi pengujian dan kalibrasi alat kesehatan di Banjarbaru. Saya bertindak dalam manajemen infrastruktur server dan publikasi datanya.</p>
+                            </div>
+                        </div>
 
-									<div class="swiper-container js-carousel-clients">
-										<div class="swiper-wrapper">
-											<div class="swiper-slide">
-												<a href="#"><img
-														src="assets/img/doormeet.png"
-														alt="Logo" /></a>
-											</div>
+                        <!-- Project 3 -->
+                        <div class="project-card">
+                            <div class="project-img-wrapper">
+                                <img src="assets/img/blog_3.png" alt="RSU Permata Husada" class="project-img">
+                                <div class="project-overlay">
+                                    <a href="https://rspermatahusadabjb.com/" target="_blank" class="project-link-btn" title="Kunjungi Website"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-tag">Healthcare Info</div>
+                                <h3 class="project-title">RSU Permata Husada Portal</h3>
+                                <p class="project-desc">Portal informasi layanan kesehatan, jadwal dokter, serta publikasi kegiatan medis RSU Permata Husada yang dikelola demi pelayanan publik yang transparan.</p>
+                            </div>
+                        </div>
 
-											<div class="swiper-slide">
-												<a href="#"><img
-														src="assets/img/saneno.png"
-														alt="Logo" /></a>
-											</div>
+                        <!-- Project 4 -->
+                        <div class="project-card">
+                            <div class="project-img-wrapper">
+                                <img src="assets/img/blog_4.png" alt="LPAFK Banjarbaru" class="project-img">
+                                <div class="project-overlay">
+                                    <a href="https://www.instagram.com/lpafkbanjarbaru/" target="_blank" class="project-link-btn" title="Kunjungi Website"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-tag">Public Relations</div>
+                                <h3 class="project-title">Media Informasi LPAFK</h3>
+                                <p class="project-desc">Pengelolaan akun media sosial informasi publik LPAFK Banjarbaru untuk mempublikasikan berita layanan teknis kalibrasi kepada klien mitra.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-											<div class="swiper-slide">
-												<a href="#"><img
-														src="assets/img/leelaam.png"
-														alt="Logo" /></a>
-											</div>
+                <!-- CONTACT TAB -->
+                <section id="contact" class="tab-pane">
+                    <h2 class="section-title">Hubungi Saya</h2>
+                    <p class="tab-lead-text">Hubungi saya jika Anda membutuhkan bantuan terkait arsitektur jaringan, sistem administrasi, atau perancangan infrastruktur IT.</p>
 
-											<div class="swiper-slide">
-												<a href="#"><img
-														src="assets/img/sunbulahhome.png"
-														alt="Logo" /></a>
-											</div>
-											<div class="swiper-slide">
-												<a href="#"><img
-														src="assets/img/doormeet.png"
-														alt="Logo" /></a>
-											</div>
+                    <div class="contact-grid">
+                        <div class="contact-info-cards">
+                            <div class="contact-card-box">
+                                <div class="contact-card-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                                <div>
+                                    <h4 class="contact-card-title">Alamat Kantor</h4>
+                                    <p class="contact-card-text">Jl. Dahlina Raya, Loktabat Sel., Kec. Banjarbaru Selatan, Kota Banjarbaru, Kalimantan Selatan 70714</p>
+                                </div>
+                            </div>
+                            <div class="contact-card-box">
+                                <div class="contact-card-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <h4 class="contact-card-title">Email Direct</h4>
+                                    <p class="contact-card-text"><a href="mailto:muhammad.janawi99@gmail.com">muhammad.janawi99@gmail.com</a></p>
+                                </div>
+                            </div>
+                            <div class="contact-card-box">
+                                <div class="contact-card-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                                <div>
+                                    <h4 class="contact-card-title">WhatsApp</h4>
+                                    <p class="contact-card-text"><a href="https://wa.me/6282261973993" target="_blank">0822-6197-3993 (Chat Langsung)</a></p>
+                                </div>
+                            </div>
+                        </div>
 
-											<div class="swiper-slide">
-												<a href="#"><img
-														src="assets/img/saneno.png"
-														alt="Logo" /></a>
-											</div>
+                        <div class="map-wrapper">
+                            <iframe src="https://www.google.com/maps/embed/v1/place?q=PT+ERA+BITS+INDONESIA,+Jalan+Dahlina+Raya,+Loktabat+Selatan,+Banjarbaru+City,+South+Kalimantan,+Indonesia&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </section>
+            </div>
 
-											<div class="swiper-slide">
-												<a href="#"><img
-														src="assets/img/leelaam.png"
-														alt="Logo" /></a>
-											</div>
+            <!-- Footer -->
+            <footer class="app-footer">
+                <p>&copy; 2026 Muhammad Janawi. All Rights Reserved.</p>
+                <p>Designed with <i class="fa-solid fa-heart text-danger"></i> for high network efficiency.</p>
+            </footer>
+        </main>
+    </div>
 
-											<div class="swiper-slide">
-												<a href="#"><img
-														src="assets/img/sunbulahhome.png"
-														alt="Logo" /></a>
-											</div>
-										</div>
-
-										<div class="swiper-pagination"></div>
-									</div>
-								</div> -->
-							</div>
-
-							<!-- RESUME -->
-							<div id="resume-tab" class="tabcontent">
-								<div class="pb-2">
-									<h1 class="title title--h1 first-title title__separate">Resume </h1>
-									<p>
-										<a class="news-item__link blue-button" target="_blank" href="https://drive.google.com/file/d/1yCLsjVGOvOs9WJucE_cReKZQLYOU80O7/view?usp=drive_link">
-											<span style="text-decoration: none; color: #ffffff; padding: 8px 16px; border-radius: 4px; background-color: #007bff; display: inline-block;">Klik Download CV Janawi</span>
-										</a>
-									</p>
-								</div>
-								<br> <br>
-								
-								
-
-								<!-- Experience -->
-								<div class="row">
-									<div class="col-12">
-										<h2 class="title title--h3"><img class="title-icon"
-												src="assets/icons/education.png"
-												alt="" />Riwayat Pendidikan</h2>
-												
-										<div class="timeline">
-											<!-- Item -->
-											<article class="timeline__item">
-												<h5 class="title title--h5 timeline__title">Universitas Lambung Mangkurat</h5>
-												<span class="timeline__period">2014 — 2019</span> <br>
-												<span class="timeline__period">Ilmu Komputer | FMIPA ULM</span>
-												<!-- <p class="timeline__description"> simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make.</p> -->
-											</article>
-
-											<!-- Item -->
-											<article class="timeline__item">
-												<h5 class="title title--h5 timeline__title">SMAN-2 Katingan Kuala</h5>
-												<span class="timeline__period">2012 — 2014</span><br>
-												<span class="timeline__period">Jurusan IPA</span>
-												<!-- <p class="timeline__description"> simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make.</p> -->
-											</article>
-
-											<!-- Item -->
-											<article class="timeline__item">
-												<h5 class="title title--h5 timeline__title">SMPN-3 Kampung Baru</h5>
-												<span class="timeline__period">2010 — 2012</span>
-												<!-- <p class="timeline__description"> simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make.</p> -->
-											</article>
-										</div>
-									</div>
-									
-									<div class="col-12">
-										<br>
-
-										<h2 class="title title--h3"><img class="title-icon"
-												src="assets/icons/experience.png"
-												alt="" /> Pengalaman</h2>
-										<div class="timeline">
-											
-											<!-- Item -->
-											<article class="timeline__item">
-												<h5 class="title title--h5 timeline__title">IT Network Engineer and IT System Analyst</h5>
-												<span class="timeline__period">Januari 2021 — Hingga Sekarang</span><br>
-												<span class="timeline__period">di <b>LPAFK Banjarbaru - Kalimantan Selatan, Indonesia</b> </span>
-<!-- 												<p class="timeline__description">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p> -->
-											</article>
-											
-
-											<!-- Item -->
-											<article class="timeline__item">
-												<h5 class="title title--h5 timeline__title">Koordinator IT</h5>
-												<span class="timeline__period">Januari 2020 — Hingga Sekarang</span><br>
-												<span class="timeline__period">di <b>RSU Permata Husada - Kalimantan Selatan, Indonesia</b> </span>
-<!-- 												<p class="timeline__description">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p> -->
-											</article>
-											
-											<!-- Item -->
-											<article class="timeline__item">
-												<h5 class="title title--h5 timeline__title">IT Branch</h5>
-												<span class="timeline__period">2019 — 2020</span><br>
-												<span class="timeline__period">At <b>PT. Sumber Alfaria Trijaya Tbk. - Kalimantan Selatan, Indonesia</b> </span>
-<!-- 												<p class="timeline__description">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p> -->
-											</article>
-
-										</div>
-									</div>
-								</div>
-
-								<!-- Skills -->
-								<div class="row">
-									<div class="col-12">
-										<h2 class="title title--h3">My Skills</h2>
-										<div class="box box__border">
-											<!-- <div class="progress">
-												<div class="progress-bar" role="progressbar" aria-valuenow="95"
-													aria-valuemin="0" aria-valuemax="100">
-													<div class="progress-text"><span>Web Design</span><span>95%</span>
-													</div>
-												</div>
-												<div class="progress-text"><span>Web Design</span></div>
-											</div>
-
-											<div class="progress">
-												<div class="progress-bar" role="progressbar" aria-valuenow="95"
-													aria-valuemin="0" aria-valuemax="100">
-													<div class="progress-text"><span>Web Development</span><span>95%</span></div>
-												</div>
-												<div class="progress-text"><span>Web Development</span></div>
-											</div>
-
-											<div class="progress">
-												<div class="progress-bar" role="progressbar" aria-valuenow="80"
-													aria-valuemin="0" aria-valuemax="100">
-													<div class="progress-text"><span>Mobile Apps Development</span><span>80%</span>
-													</div>
-												</div>
-												<div class="progress-text"><span>Mobile Apps Development</span></div>
-											</div> -->
-											<div>
-												<span class="badge badge-primary">Mikrotik</span>
-												<span class="badge badge-primary">Load Balancing</span>
-												<span class="badge badge-primary">Network Monitoring</span>
-												<span class="badge badge-primary">Troubleshooting</span>
-												<span class="badge badge-primary">VLAN</span>
-												<span class="badge badge-primary">Switching</span>
-												<span class="badge badge-primary">Routing</span>
-												<span class="badge badge-primary">DNS</span>
-												<span class="badge badge-primary">DHCP</span>
-												<span class="badge badge-primary">OSPF</span>
-												<span class="badge badge-primary">VPN</span>
-												<span class="badge badge-primary">Firewalls</span>
-												<span class="badge badge-primary">Network Security</span>
-												<span class="badge badge-primary">TCP/IP</span>
-												<span class="badge badge-primary">VLAN</span>
-												<span class="badge badge-primary">Switching</span>
-												<span class="badge badge-primary">Routing</span>
-												<span class="badge badge-primary">DNS</span>
-												<span class="badge badge-primary">DHCP</span>
-												<span class="badge badge-primary">SD-WAN</span>
-												<span class="badge badge-primary">QoS</span>											
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<!-- WORKS -->
-							<div id="works-tab" class="tabcontent">
-								<div class="pb-2">
-									<h1 class="title title--h1 first-title title__separate">Portfolio</h1>
-								</div>
-
-								<!-- Filter -->
-								<div class="select">
-									<span class="placeholder">Select category</span>
-									<ul class="filter">
-										<li class="filter__item">Category</li>
-										<li class="filter__item active" data-filter="*"><a class="filter__link active"
-												href="#filter">All</a></li>
-										<li class="filter__item" data-filter=".web-development"><a class="filter__link"
-												href="#filter">Web Development</a></li>
-										<li class="filter__item" data-filter=".web-design"><a class="filter__link"
-												href="#filter">Web Design</a></li>
-										<li class="filter__item" data-filter=".mobile-apps"><a class="filter__link"
-												href="#filter">Mobile APPs Development</a></li>
-									</ul>
-									<input type="hidden" name="changemetoo" />
-								</div>
-
-								<!-- Gallery -->
-								<div class="gallery-grid js-grid-row js-filter-container">
-									<div class="gutter-sizer"></div>
-									<!-- Item 1 -->
-									<figure class="gallery-grid__item web-development">
-										<div class="gallery-grid__image-wrap">
-											<img class="gallery-grid__image cover lazyload"
-												src="assets/img/header_bg_1x.png" data-zoom alt="" />
-										</div>
-										<figcaption class="gallery-grid__caption">
-											<h4 class="title title--h6 gallery-grid__title">Half Avocado</h4>
-											<span class="gallery-grid__category">Web Development</span>
-										</figcaption>
-									</figure>
-
-									<!-- Item 2 -->
-									<figure class="gallery-grid__item web-development">
-										<div class="gallery-grid__image-wrap">
-											<img class="gallery-grid__image cover lazyload"
-												src="assets/img/header_bg_1x.png" data-zoom alt="" />
-										</div>
-										<figcaption class="gallery-grid__caption">
-											<h4 class="title title--h6 gallery-grid__title">Pink Flamingo</h4>
-											<span class="gallery-grid__category">Web Development</span>
-										</figcaption>
-									</figure>
-
-									<!-- Item 3 -->
-									<figure class="gallery-grid__item web-design">
-										<div class="gallery-grid__image-wrap">
-											<img class="gallery-grid__image cover lazyload"
-												src="assets/img/header_bg_1x.png" data-zoom alt="" />
-										</div>
-										<figcaption class="gallery-grid__caption">
-											<h4 class="title title--h6 gallery-grid__title">Abstract</h4>
-											<span class="gallery-grid__category">Web Design</span>
-										</figcaption>
-									</figure>
-
-									<!-- Item 4 -->
-									<figure class="gallery-grid__item web-design">
-										<div class="gallery-grid__image-wrap">
-											<img class="gallery-grid__image cover lazyload"
-												src="assets/img/header_bg_1x.png" data-zoom alt="" />
-										</div>
-										<figcaption class="gallery-grid__caption">
-											<h4 class="title title--h6 gallery-grid__title">Abstract #2</h4>
-											<span class="gallery-grid__category">Web Design</span>
-										</figcaption>
-									</figure>
-
-									<!-- Item 5 -->
-									<figure class="gallery-grid__item web-design">
-										<div class="gallery-grid__image-wrap">
-											<img class="gallery-grid__image cover lazyload"
-												src="assets/img/header_bg_1x.png" data-zoom alt="" />
-										</div>
-										<figcaption class="gallery-grid__caption">
-											<h4 class="title title--h6 gallery-grid__title">Abstract #3</h4>
-											<span class="gallery-grid__category">Web Design</span>
-										</figcaption>
-									</figure>
-
-									<!-- Item 6 -->
-									<figure class="gallery-grid__item mobile-apps">
-										<div class="gallery-grid__image-wrap">
-											<img class="gallery-grid__image cover lazyload"
-												src="assets/img/header_bg_1x.png" data-zoom alt="" />
-										</div>
-										<figcaption class="gallery-grid__caption">
-											<h4 class="title title--h6 gallery-grid__title">Golden Gate</h4>
-											<span class="gallery-grid__category">Mobile Apps</span>
-										</figcaption>
-									</figure>
-
-									<!-- Item 7 -->
-									<figure class="gallery-grid__item web-development">
-										<div class="gallery-grid__image-wrap">
-											<img class="gallery-grid__image cover lazyload"
-												src="assets/img/header_bg_1x.png" data-zoom alt="" />
-										</div>
-										<figcaption class="gallery-grid__caption">
-											<h4 class="title title--h6 gallery-grid__title">Peach</h4>
-											<span class="gallery-grid__category">Web Development</span>
-										</figcaption>
-									</figure>
-
-									<!-- Item 8 -->
-									<figure class="gallery-grid__item web-design">
-										<div class="gallery-grid__image-wrap">
-											<img class="gallery-grid__image cover lazyload"
-												src="assets/img/header_bg_1x.png" data-zoom alt="" />
-										</div>
-										<figcaption class="gallery-grid__caption">
-											<h4 class="title title--h6 gallery-grid__title">Abstract #4</h4>
-											<span class="gallery-grid__category">Web Design</span>
-										</figcaption>
-									</figure>
-
-									<!-- Item 9 -->
-									<figure class="gallery-grid__item mobile-apps">
-										<div class="gallery-grid__image-wrap">
-											<img class="gallery-grid__image cover lazyload"
-												src="assets/img/header_bg_1x.png" data-zoom alt="" />
-										</div>
-										<figcaption class="gallery-grid__caption">
-											<h4 class="title title--h6 gallery-grid__title">Hedgehog</h4>
-											<span class="gallery-grid__category">Mobile Apps</span>
-										</figcaption>
-									</figure>
-								</div><!-- Gallery End -->
-							</div>
-
-							<!-- BLOG -->
-							<div id="blog-tab" class="tabcontent">
-								<div class="pb-2">
-									<h1 class="title title--h1 first-title title__separate">Blog</h1>
-								</div>
-
-								<!-- News -->
-								<div class="news-grid">
-									<!-- Post -->
-									<article class="news-item box">
-										<div class="news-item__image-wrap overlay overlay--45">
-											<div class="news-item__date">Jan<span>2022</span></div>
-											<a class="news-item__link" target="_blank" href="https://erabits-indonesia.com/"></a>
-											<img class="cover lazyload" src="assets/img/blog_1.png" alt="PT. ERA BITS INDONESI" />
-										</div>
-										<div class="news-item__caption">
-											<h2 class="title title--h4">PT. ERA BITS INDONESIA</h2>
-											<p>PT. ERA BITS INDONESIA merupakan perusahaan yang berpusat di Banjarbaru yang menawarkan beberapa solusi teknologi seperti instalasi jaringan, pembuatan aplikasi, dan instalasi CCTV</p>
-										</div>
-									</article>
-
-									<!-- Post -->
-									<article class="news-item box">
-										<div class="news-item__image-wrap overlay overlay--45">
-											<div class="news-item__date">01<span>Jan</span></div>
-											<a class="news-item__link" target="_blank" href="https://bpfk-banjarbaru.org/"></a>
-											<img class="cover lazyload" src="assets/img/blog_2.png" alt="BPFK Banjarbaru" />
-										</div>
-										<div class="news-item__caption">
-											<h2 class="title title--h4">BPFK Banjarbaru</h2>
-											<p>Website BPFK Banjarbaru adalah web profil yang saya kelola, pada web ini menyajikan berbagai macam informasi terkait kegiatan ataupun layanan yang ada di BPFK Banjarbaru.
-											</p>
-										</div>
-									</article>
-
-									<!-- Post -->
-									<article class="news-item box">
-										<div class="news-item__image-wrap overlay overlay--45">
-											<div class="news-item__date">Mar<span>2020</span></div>
-											<a class="news-item__link" target="_blank" href="https://rspermatahusadabjb.com/"></a>
-											<img class="cover lazyload" src="assets/img/blog_3.png" alt="RSU Permata Husada" />
-										</div>
-										<div class="news-item__caption">
-											<h2 class="title title--h4">RSU Permata Husada</h2>
-											<p>Website RSU Permata Husada di gunakan untuk media informasi terkait layanan, jadwal dokter ataupun informasi terkini yang saya kelola bersama tim</p>
-										</div>
-									</article>
-
-									<!-- Post -->
-									<article class="news-item box">
-										<div class="news-item__image-wrap overlay overlay--45">
-											<div class="news-item__date">Jan<span>2020</span></div>
-											<a class="news-item__link" target="_blank" href="https://www.instagram.com/lpafkbanjarbaru/"></a>
-											<img class="cover lazyload" src="assets/img/blog_4.png" alt="Instagram LPAFK Banjarbaru" />
-										</div>
-										<div class="news-item__caption">
-											<h2 class="title title--h4">Instagram BPFK Banjarbaru</h2>
-											<p>Instagram BPFK Banjarbaru....</p>
-										</div>
-									</article>
-								</div>
-							</div>
-							
-
-							<!-- Post
-									<article class="news-item box">
-										<div class="news-item__image-wrap overlay overlay--45">
-										<div class="news-item__date">01<span>Jan</span></div>
-										<a class="news-item__link" target="_blank" href="https://www.instagram.com/rs.permatahusada/"></a>
-										<img class="cover lazyload" src="assets/img/blog_5.png" alt="Instagram RSU Permata Husada" />
-									</div>
-									<div class="news-item__caption">
-										<h2 class="title title--h4">Instagram RSU Permata Husada</h2>
-										<p>Instagram Instagram RSU Permata Husada....</p>
-									</div>
-								</article>
-							</div>
-						</div> -->
-
-							<!-- CONTACT -->
-							<!-- CONTACT -->
-							<div id="contact-tab" class="tabcontent">
-								<div class="pb-2">
-									<h1 class="title title--h1 first-title title__separate">Contact</h1>
-								</div>
-
-								<!-- Contact -->
-								<div class="map" id="map">
-									<iframe src="https://www.google.com/maps/embed/v1/place?q=PT+ERA+BITS+INDONESIA,+Jalan+Dahlina+Raya,+Loktabat+Selatan,+Banjarbaru+City,+South+Kalimantan,+Indonesia&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-								</div>
-								<h2 class="title title--h3">My Contact</h2>
-								<p>Jangan ragu untuk menghubungi saya. Saya siap membantu anda</p>
-    
-    							<ul>
-       								<li><strong>Alamat:</strong>Jl. Dahlina Raya, Loktabat Sel., Kec. Banjarbaru Selatan</li>
-        							<li><strong>Email:</strong> <a href="mailto:muhammad.janawi99@gmail.com">muhammad.janawi99@gmail.com</a></li>
-       								<li><strong>WhatsApp:</strong> 0822-6197-3993</li>
-   								</ul>
-
-								<!-- <form id="contact-form" class="contact-form" data-toggle="validator">
-									<div class="row">
-										<div class="form-group col-12 col-md-6">
-											<input type="text" class="form-control" id="nameContact" name="nameContact"
-												placeholder="Full name" required="required" autocomplete="on"
-												oninvalid="setCustomValidity('Fill in the field')"
-												onkeyup="setCustomValidity('')">
-											<div class="help-block with-errors"></div>
-										</div>
-										<div class="form-group col-12 col-md-6">
-											<input type="email" class="form-control" id="emailContact"
-												name="emailContact" placeholder="Email address" required="required"
-												autocomplete="on" oninvalid="setCustomValidity('Email is incorrect')"
-												onkeyup="setCustomValidity('')">
-											<div class="help-block with-errors"></div>
-										</div>
-										<div class="form-group col-12 col-md-12">
-											<textarea class="textarea form-control" id="messageContact"
-												name="messageContact" placeholder="Your Message" rows="4"
-												required="required" oninvalid="setCustomValidity('Fill in the field')"
-												onkeyup="setCustomValidity('')"></textarea>
-											<div class="help-block with-errors"></div>
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-12 col-md-6 order-2 order-md-1 text-center text-md-left">
-											<div id="validator-contact" class="hidden"></div>
-										</div>
-										<div class="col-12 col-md-6 order-1 order-md-2 text-right">
-											<button type="submit" class="btn"><i class="font-icon icon-send"></i> Send
-												Message</button>
-										</div>
-									</div>
-								</form> -->
-							</div>
-						</div>
-					</div>
-					<!-- Footer -->
-					<footer class="footer">©2025 | janawi-tech.github.io</footer>
-				</div>
-			</div>
-		</div>
-	</main>
-
-	<!-- BackToTop -->
-	<div class="back-to-top"></div>
-
-	<!-- JavaScripts -->
-	<script src="assets/js/jquery-3.4.1.min.js"></script>
-	<script src="assets/js/plugins.min.js"></script>
-	<script src="assets/js/common.js"></script>
-
-	<script>
-		if (localStorage.getItem("theme") === null) {
-			localStorage.setItem('theme', 'dark');
-		} 
-		if(localStorage.getItem('theme') === 'dark') {
-			$('head').append('<link rel="stylesheet" id="dark-mode" type="text/css" href="assets/styles/style-dark.css" />');
-		} else {
-			$('head link[href="assets/styles/style-dark.css"]').remove();
-		}
-
-		$('.light').click(function (){
-			localStorage.setItem('theme', 'light');
-			$('head link[href="assets/styles/style-dark.css"]').remove();
-		});
-
-		$('.dark').click(function (){
-			localStorage.setItem('theme', 'dark');
-			$('head').append('<link rel="stylesheet" id="dark-mode" type="text/css" href="assets/styles/style-dark.css" />');
-		});
-
-		$('[data-toggle="tooltip"]').tooltip({
-			trigger : 'hover'
-		});
-	</script>
+    <!-- Core Scripts -->
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/terminal.js"></script>
 </body>
 
 </html>
